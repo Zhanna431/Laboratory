@@ -1,0 +1,42 @@
+﻿<Window x:Class="Laboratory.registerWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Laboratory"
+        mc:Ignorable="d"
+        Title="registerWindow" Height="500" Width="400">
+    <Grid>
+        <Border>
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0.5,1" EndPoint="0.5,0">
+                    <GradientStop Color="#ff76e383" Offset="0"/>
+                    <GradientStop Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <StackPanel Margin="0,0,0,275" VerticalAlignment="Center">
+            <Image Source="Resources/logo.png"  Width="150"/>
+            <TextBlock HorizontalAlignment="Center" FontWeight="Bold" FontFamily="Comic Sans MS" FontSize="30"  Text="Medical laboratory №20"/>
+        </StackPanel>
+        <ComboBox Name="Position" FontSize="23" FontFamily="Comic Sans MS" Height="35" Margin="0,300,0,0" Width="390" BorderBrush="White">
+            <TextBlock>Лаборант</TextBlock>
+            <TextBlock>Лаборант-исследователь</TextBlock>
+            <TextBlock>Бухгалтер</TextBlock>
+            <TextBlock>Администратор</TextBlock>
+        </ComboBox>
+        <StackPanel Margin="0,210,0,0">
+            <TextBox Text="Username" FontFamily="Comic Sans MS" FontSize="25" Background="Transparent"/>
+        </StackPanel>
+        <StackPanel Margin="0,260,0,0">
+            <TextBlock Text="Password" FontFamily="Comic Sans MS" FontSize="25" Background="Transparent" Margin="0,0,260,0"/>
+        </StackPanel>
+        <StackPanel Margin="0,260,0,0">
+            <PasswordBox Password="Password" FontFamily="Comic Sans MS" FontSize="25" Background="Transparent" Margin="120,0,0,0" Height="42"/>
+        </StackPanel>
+        <StackPanel Margin="0,320,0,0">
+            <TextBox Text="Email" FontFamily="Comic Sans MS" FontSize="25" Background="Transparent"/>
+        </StackPanel>
+        <Button Click="Button_Home_Click" Background="White" FontFamily="Comic Sans MS" FontSize="20" Margin="0,400,0,0" Height="35" Width="150" Content="Register"/>
+    </Grid>
+</Window>
